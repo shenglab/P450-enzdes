@@ -1,0 +1,19 @@
+# i/o
+-in:file:fasta /home/wendao/work/P450/890/templates/ref.fasta
+-nstruct 20
+-parser:protocol rosetta_cm.xml
+
+# relax options
+-relax:dualspace
+-relax:jump_move true
+-default_max_cycles 200
+-beta_cart
+-hybridize:stage1_probability 1.0
+
+-in:file:frag3 ../frags/t000_.200.3mers
+-in:file:frag9 ../frags/t000_.200.9mers
+
+-score:weights beta_cart
+-extra_res_cen HEM.cen.params
+-extra_res_fa HEM.fa.params
+-score:extra_improper_file HEM.tors
