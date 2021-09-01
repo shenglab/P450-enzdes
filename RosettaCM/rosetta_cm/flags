@@ -1,5 +1,5 @@
 # i/o
--in:file:fasta /home/wendao/work/P450/890/templates/ref.fasta
+-in:file:fasta 890.fasta
 -nstruct 20
 -parser:protocol rosetta_cm.xml
 
